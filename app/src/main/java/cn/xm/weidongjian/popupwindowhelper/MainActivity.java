@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button5).setOnClickListener(this);
         popView = LayoutInflater.from(this).inflate(R.layout.popupview, null);
         popupWindowHelper = new PopupWindowHelper(popView);
-
         popView.findViewById(R.id.button3).setOnClickListener(this);
     }
 
