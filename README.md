@@ -7,6 +7,14 @@ Show popup window at any location with animation
 
 **使用方法**
 
+- 添加依赖
+```
+dependencies {
+ compile 'cn.weidongjian.android:popupWindowHelper:0.5'
+}
+```
+在项目的build.gradle中添加如上一行代码，就可以把库文件包含在你的项目中了
+
  - 初始化
 ```
 private PopupWindowHelper popupWindowHelper;
