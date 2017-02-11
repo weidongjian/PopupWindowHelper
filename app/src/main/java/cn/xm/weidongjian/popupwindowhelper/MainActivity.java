@@ -2,6 +2,7 @@ package cn.xm.weidongjian.popupwindowhelper;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         popView = LayoutInflater.from(this).inflate(R.layout.popupview, null);
         popupWindowHelper = new PopupWindowHelper(popView);
         popView.findViewById(R.id.button3).setOnClickListener(this);
+        Log.d("weigan", "kkkk");
     }
 
     @Override
