@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         popView = LayoutInflater.from(this).inflate(R.layout.popupview, null);
         popupWindowHelper = new PopupWindowHelper(popView);
         popView.findViewById(R.id.button3).setOnClickListener(this);
-        Log.d("weigan", "kkkk");
+        Log.d("weigan", "kkkkffff");
     }
 
     @Override
