@@ -3,4 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="show_above">Show above</string>
+    <string name="drop_down">Drop Down</string>
+    <string name="dismiss">dismiss</string>
+    <string name="start_zagel">Start Zagel</string>
+    <string name="details">I assume you have connected your actual Android.</string>
+    <string name="show_from_top">Show From Top</string>
+    <string name="show_from_bottom">Show From Bottom</string>
 </resources>

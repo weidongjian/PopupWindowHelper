@@ -26,7 +26,7 @@ public class PopupWindowHelper {
     }
 
     public void showAsDropDown(View anchor, int xoff, int yoff) {
-        initPopupWindow(TYPE_WRAP_CONTENT);
+        initPopupWindow(TYPE_MATCH_PARENT);
         mPopupWindow.showAsDropDown(anchor, xoff, yoff);
     }
 
@@ -46,13 +46,13 @@ public class PopupWindowHelper {
     }
 
     public void showAsPopUp(View anchor, int xoff, int yoff) {
-        initPopupWindow(TYPE_WRAP_CONTENT);
+        initPopupWindow(TYPE_MATCH_PARENT);
         mPopupWindow.setAnimationStyle(R.style.AnimationUpPopup);
-        popupView.measure(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        popupView.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         int height = popupView.getMeasuredHeight();
         int[] location = new int[2];
         anchor.getLocationInWindow(location);
-        mPopupWindow.showAtLocation(anchor, Gravity.LEFT | Gravity.TOP, location[0] + xoff, location[1] - height + yoff);
+        mPopupWindow.showAtLocation(anchor, Gravity.TOP, location[0] + xoff, location[1] - height + yoff);
     }
 
     public void showFromBottom(View anchor) {
